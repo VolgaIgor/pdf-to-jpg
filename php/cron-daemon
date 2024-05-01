@@ -1,0 +1,1 @@
+* * * * * /usr/local/bin/php /var/www/html/yii clear/old >> /var/log/clear.log 2>&1
