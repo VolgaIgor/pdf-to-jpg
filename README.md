@@ -3,7 +3,8 @@
 Учебный проект. Построен на базе [Yii2](https://github.com/yiisoft/yii2-app-basic).
 
 ## Запуск
-Запустить команду `docker compose up -d --build`
+Запустить команду `docker compose up -d --build`.
+Сервис станет доступен на http://127.0.0.1
 
 ## Консольные команды
 ### `yii clear/all`
