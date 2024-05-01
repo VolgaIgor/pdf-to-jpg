@@ -43,11 +43,10 @@ class UploadController extends Controller
 
         $tmpFilename = Yii::$app->getSecurity()->generateRandomString();
         $tmpDirpath = Yii::getAlias("@runtime/pdf/{$tmpFilename}");
+        mkdir($tmpDirpath, 0777, true);
 
         $tmpFilepath = "{$tmpDirpath}.pdf";
         $file->saveAs($tmpFilepath);
-
-        mkdir($tmpDirpath, 0777, true);
 
         $outputFilename = $tmpDirpath . '/' . 'page_%03d.jpg';
 
